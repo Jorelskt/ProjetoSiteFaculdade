@@ -1,0 +1,12 @@
+let menu = document.querySelector('#botaoMenu');
+let atalhos = document.querySelector('.atalhos');
+
+menu.onclick = () =>{
+    menu.classList.toggle('fa-times');
+    atalhos.classList.toggle('active');
+}
+
+window.onscroll = () =>{
+    menu.classList.remove('fa-times');
+    atalhos.classList.remove('active');
+}
