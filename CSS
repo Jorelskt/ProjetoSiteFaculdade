@@ -1,0 +1,604 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300&family=Lilita+One&family=Nunito:wght@300&family=Poppins:wght@100;200;300;400;500;600;700&family=Press+Start+2P&family=Sarala:wght@400;700&display=swap');
+
+:root{
+    --green:#F2D7D9;
+    --black:#562B08;
+    --light-color:#560D0D;
+    --box-shadow:0.6rem 0.6rem 0 #A5D7E8;
+    --text-shadow:0.3rem 0.3rem 0 #6B728E;
+    --border:.3rem solid var(--green);
+}
+
+*{
+    font-family: 'Poppins', sans-serif;
+    margin: 0; padding: 0;
+    box-sizing: border-box;
+    outline: none; border: none;
+    text-transform: capitalize;
+    text-decoration: none;
+}
+
+html{
+    font-size: 70%;
+    overflow-x: hidden;
+    scroll-padding-top: 7rem;
+    scroll-behavior: smooth;
+    background: #AD8E70;
+}
+
+section{
+    padding: 100px 3%;
+}
+
+.textoCursos{
+    text-align: center;
+    padding-bottom: 80px;
+    text-shadow: var(--text-shadow);
+    color: var(--black);
+    font-size: 50px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.textoCursos span{
+    text-transform: uppercase;
+    color: var(--green);
+}
+
+.botao{
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px;
+    padding-left: 10px;
+    border: var(--border);
+    border-radius: 6px;
+    box-shadow: var(--box-shadow);
+    color: var(--black);
+    cursor: pointer;
+    font-size: 18px;
+    transition: 0.2s ease-in-out;
+}
+
+.botao span{
+    padding: 7px 9px;
+    border-radius: 5px;
+    background: var(--green);
+    color: var(--black);
+    margin-left: 5px;
+    transition: 0.2s ease-in-out;
+}
+
+.botao:hover{
+    background: #5F6F94;
+    color: #0B2447;
+    transition: 0.2s ease-in-out;
+}
+
+.botao:hover span{
+    color: var(--black);
+    background: #E4DCCF;
+    margin-left: 10px;
+    transition: 0.2s ease-in-out;
+}
+
+.cabecalho{
+    padding: 32px 12%;
+    position: fixed;
+    top: 0; left: 0; right: 0;
+    z-index: 1000;
+    box-shadow: 0 5px 15px #000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #CE7777;
+}
+
+.cabecalho .logo{
+    font-size: 30px;
+    color: var(--black);
+}
+
+.cabecalho .logo i{
+    color: var(--green);
+}
+
+.cabecalho .atalhos a{
+    font-size: 13px;
+    color: var(--light-color);
+    margin-left: 25px;
+    transition: 0.4s ease-in-out;
+}
+
+.cabecalho .atalhos a:hover{
+    color: var(--green);
+}
+
+#botaoMenu{
+    font-size: 27px;
+    border-radius: 4px;
+    background: #7B8FA1;
+    color: var(--green);
+    padding: 7px 7px;
+    cursor: pointer;
+    display: none;
+}
+
+.PaginaInicial{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.PaginaInicial .imagem{
+    flex: 1 1 60rem;
+}
+
+.PaginaInicial .imagem img{
+    width: 80%;
+}
+
+.PaginaInicial .textoInicial{
+    flex: 1 1 40rem;
+}
+
+.PaginaInicial .textoInicial h3{
+    font-size: 43px;
+    color: var(--black);
+    line-height: 1.5;
+    text-shadow: var(--text-shadow);
+}
+
+.PaginaInicial .textoInicial p{
+    font-size: 15px;
+    color: var(--light-color);
+    line-height: 1.5;
+    padding: 8px 0;
+}
+
+.nossosServicos{
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(40px, 1fr));
+    padding-top: 40px;
+    padding-bottom: 40px;
+    background: #C8B6A6;
+}
+
+.nossosServicos .icones{
+    border: var(--border);
+    box-shadow: var(--box-shadow);
+    border-radius: 8px;
+    padding: 25px;
+}
+
+.nossosServicos .icones i{
+    color: #18122B;
+    font-size: 40px;
+    padding-bottom: 15px;
+}
+
+.nossosServicos .icones h3{
+    font-size: 30px;
+    padding-bottom: 5px;
+}
+
+.nossosServicos .icones p{
+    font-size: 13px;
+    color: var(--light-color);
+    padding: 10px 0;
+}
+
+.cursos .bordasCursos{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
+    gap: 50px 15px;
+}
+
+.cursos .bordasCursos .escolhaCursos{
+    background: #F8EAD8;
+    border-radius: 6px;
+    box-shadow: var(--box-shadow);
+    border: var(--border);
+    padding: 10px;
+}
+
+.cursos .bordasCursos .escolhaCursos i{
+    color: #DF5E5E;
+    font-size: 40px;
+    padding-bottom: 15px;
+}
+
+.cursos .bordasCursos .escolhaCursos h3{
+    font-size: 15px;
+    padding: 5px;
+}
+
+.cursos .bordasCursos .escolhaCursos p{
+    font-size: 13px;
+    line-height: 2;
+}
+
+.trabalheConosco .trabalheConoscoInformacao{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.trabalheConosco .trabalheConoscoInformacao .imagem{
+    flex: 3 3 80px;
+}
+
+.trabalheConosco .trabalheConoscoInformacao .imagem img{
+    width: 110%;
+}
+
+.trabalheConosco .trabalheConoscoInformacao .textoTrabalheConosco{
+    flex: 3 3 80px;
+}
+
+.trabalheConosco .trabalheConoscoInformacao .textoTrabalheConosco h3{
+    color: var(--black);
+    text-shadow: var(--text-shadow);
+    font-size: 30px;
+}
+
+.trabalheConosco .trabalheConoscoInformacao .textoTrabalheConosco p{
+    font-size: 16px;
+    padding: 15px;
+    line-height: 30px;
+
+}
+
+.professores .nossosProfissionais{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
+    gap: 50px 15px;
+}
+
+.professores .nossosProfissionais .profissionais{
+    text-align: center;
+    background: #F8EAD8;
+    border-radius: 8px;
+    border: var(--border);
+    box-shadow: var(--box-shadow);
+    padding: 5px;
+}
+
+.professores .nossosProfissionais .profissionais img{
+    height: 200px;
+    border: var(--border);
+    border-color: #41644A;
+    border-radius: 8px;
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
+.professores .nossosProfissionais .profissionais h3{
+    color: #000;
+    font-size: 20px;
+}
+
+.professores .nossosProfissionais .profissionais span{
+    color: #0B2447;
+    font-size: 15px;
+}
+
+.professores .nossosProfissionais .profissionais .redesSociais{
+    padding-top: 20px;
+}
+
+.professores .nossosProfissionais .profissionais a{
+    height: 50px;
+    width: 50px;
+    line-height: 45px;
+    font-size: 20px;
+    color: #AD8E70;
+    border-radius: 8px;
+    border: var(--border);
+    margin: 5px;
+    transition: 0.6s ease-in-out;
+}
+
+.professores .nossosProfissionais .profissionais a:hover{
+    background: var(--green);
+    color: #DF5E5E;
+    box-shadow: var(--box-shadow);
+}
+
+.suaOpiniao .conteudoSuaOpiniao{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.suaOpiniao .conteudoSuaOpiniao .imagemForms{
+    flex: 1 1 90px;
+}
+
+.suaOpiniao .conteudoSuaOpiniao .imagemForms img{
+    width: 120%;
+}
+
+.suaOpiniao .conteudoSuaOpiniao form{
+    flex: 1 1 90px;
+    background: #F8EAD8;
+    border: var(--border);
+    box-shadow: var(--box-shadow);
+    align-items: center;
+    padding: 15px;
+    border-radius: 8px;
+}
+
+.suaOpiniao .conteudoSuaOpiniao form h3{
+    text-transform: uppercase;
+    color: #000;
+    text-align: center;
+    padding-bottom: 20px;
+    font-size: 25px;
+}
+
+.suaOpiniao .conteudoSuaOpiniao form .box{
+    width: 100%;
+    margin: 10px;
+    border-radius: 7px;
+    border: var(--border);
+    font-size: 15px;
+    color: #000;
+    padding: 10px;
+}
+
+.suaOpiniao .conteudoSuaOpiniao form .campo{
+    width: 100%;
+    margin: 10px;
+    border-radius: 7px;
+    border: var(--border);
+    font-size: 15px;
+    color: #000;
+    padding: 40px 0px ;
+}
+
+
+.suaOpiniao .conteudoSuaOpiniao form .botao{
+    padding: 10px 45px;
+}
+
+.comentarios .feedbacks{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
+    gap: 50px 15px;
+}
+
+.comentarios .feedbacks .conteudoComentario{
+    border: var(--border);
+    box-shadow: var(--box-shadow);
+    border-radius: 8px;
+    padding: 25px;
+    background: #443C68;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    z-index: 0;
+}
+
+.comentarios .feedbacks .conteudoComentario img{
+    height: 130px;
+    width: 130px;
+    border-radius: 150px;
+    object-fit: cover;
+    border: 3px solid #41644A;
+}
+
+.comentarios .feedbacks .conteudoComentario h3{
+    color: #CE7777;
+    font-size: 20px;
+    padding: 25px;
+}
+
+.comentarios .feedbacks .conteudoComentario .estrelas i{
+    color: #fff;
+    font-size: 40px;
+}
+
+.comentarios .feedbacks .conteudoComentario .feedbackComentado{
+    color: var(--light-color);
+    line-height: 2;
+    font-size: 15px;
+    padding-top: 15px;
+}
+
+.comentarios .feedbacks .conteudoComentario::before{
+    content: '';
+    position: absolute;
+    top: -40px; left: 50%;
+    transform: translateX(-50%);
+    background: var(--green);
+    border-bottom-left-radius: 50%;
+    border-bottom-right-radius: 50%;
+    height: 220px;
+    width: 120%;
+    z-index: -1;
+}
+
+.ultimasNoticias .noticias{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
+    gap: 25px;
+}
+
+.ultimasNoticias .noticias .conteudoNoticias{
+    border: var(--border);
+    box-shadow: var(--box-shadow);
+    border-radius: 8px;
+    padding: 25px;
+}
+
+.ultimasNoticias .noticias .conteudoNoticias .imagemNoticia{
+    height: 180px;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.ultimasNoticias .noticias .conteudoNoticias .imagemNoticia img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    transition: 0.4s ease-in-out;
+}
+
+.ultimasNoticias .noticias .conteudoNoticias:hover .imagemNoticia img{
+    transform: scale(1.2);
+}
+
+.ultimasNoticias .noticias .conteudoNoticias .IconesEscrita{
+    padding-top: 20px;
+}
+.ultimasNoticias .noticias .conteudoNoticias .IconesEscrita .icones{
+    padding: 10px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.ultimasNoticias .noticias .conteudoNoticias .IconesEscrita .icones a{
+    font-size: 15px;
+    color: var(--light-color);
+    transition: 0.3s ease-in-out;
+}
+
+.ultimasNoticias .noticias .conteudoNoticias .IconesEscrita .icones a:hover{
+    color: var(--green);
+    transition: 0.3s ease-in-out;
+}
+
+.ultimasNoticias .noticias .conteudoNoticias .IconesEscrita .icones a i{
+    padding-right: 10px;
+    color: var(--green);
+}
+
+.ultimasNoticias .noticias .conteudoNoticias .IconesEscrita h3{
+    color: var(--light-color);
+    font-size: 21px;
+}
+
+.ultimasNoticias .noticias .conteudoNoticias .IconesEscrita p{
+    color: var(--light-color);
+    font-size: 15px;
+    line-height: 2;
+    padding: 10px 0;
+}
+
+.nossasInformacoes .conteudoInformacoes{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 25px;
+}
+
+.nossasInformacoes .conteudoInformacoes .linksDirecionamentos h3{
+    font-size: 21px;
+    color: var(--black);
+    padding: 15px 0;
+}
+
+.nossasInformacoes .conteudoInformacoes .linksDirecionamentos a{
+    display: block;
+    font-size: 15px;
+    color: var(--light-color);
+    padding: 10px 0;
+}
+
+.nossasInformacoes .conteudoInformacoes .linksDirecionamentos a i{
+    padding-right: 8px;
+    color: var(--green);
+    transition: 0.3s ease-in-out;
+}
+
+.nossasInformacoes .conteudoInformacoes .linksDirecionamentos a:hover i{
+    padding-right: 20px;
+    transition: 0.3s ease-in-out;
+}
+
+.nossasInformacoes .creditos{
+    padding: 10px; padding-top: 25px;
+    margin-top: 20px;
+    text-align: center;
+    font-size: 15px;
+    color: var(--light-color);
+    border-top: 2px solid #000;
+}
+
+.nossasInformacoes .creditos span{
+    color: var(--green);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 997px){
+
+    html{
+        font-size: 60%;
+    }
+
+    .cabecalho{
+        padding: 20px;
+    }
+}
+
+@media (max-width: 770px){
+
+    #botaoMenu{
+        display: initial;
+    }
+
+    .cabecalho .atalhos{
+        position: absolute;
+        top: 120%; right: 30px;
+        border-radius: 15px;
+        box-shadow: var(--box-shadow);
+        width: 32rem;
+        border: var(--border);
+        background: #E4DCCF;
+        transform: scale(0);    
+        opacity: 0;
+        transform-origin: top right;
+        transition: none;
+    }
+
+    .cabecalho .atalhos.active{
+        transform: scale(1);
+        opacity: 1;
+        transition: 0.2s ease-out;
+    }
+
+
+    .cabecalho .atalhos a{
+        font-size: 12px;
+        display: block;
+        margin: 25px;
+    }
+
+}
+
+@media (max-width: 465px){
+
+    html{
+        font-size: 55%;
+    }
+}
